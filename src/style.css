@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.intro{
+    background: radial-gradient(
+      circle at top right,
+      #405a9b 0%,
+      #283b6c 30%,
+      #162343 60%,
+      #10182d 100%
+    );
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bitcount-grid-double{
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+
+.nunito{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div style="position: relative;height:100vh;" class="font-mono m-0">
+        <canvas style="position: absolute; z-index: 0;"></canvas>
+        <form class="absolute right-5 top-2 flex flex-col data bg-white px-4 py-2 rounded-md">
+            <label class="mb-2">Wave Properties</label>
+            <label for="wavelength">Wavelength</label>
+            <input type="range" min="1" max="250" name="wavelength">
+            <label for="amplitude">amplitude</label>
+            <input type="range" min="0" max="100" name="amplitude">
+            <label for="frequency">frequency</label>
+            <input type="range" min="0" max="100" name="frequency">
+        </form>
+        <form class="absolute bottom-2 right-0 md:right-5 flex flex-col data bg-white px-4 py-2 rounded-md mt-2">
+            <legend class="mb-2">Color Properties</legend>
+            <div class="grid grid-cols-2 gap-x-6">
+                <div class="flex flex-col">
+                    <label for="color">Color</label>
+                    <input type="range" min="0" max="255" name="color">
+                </div>
+                <div class="flex flex-col">
+                    <label for="br">Background Red(rgb)</label>
+                    <input type="range" min="0" value="0" max="255" name="br">
+                </div>
+                <div class="flex flex-col">
+                    <label for="saturation">Saturation</label>
+                    <input type="range" min="0" max="100" name="saturation">
+                </div>
+                <div class="flex flex-col">
+                    <label for="bg">Background Green(rgb)</label>
+                    <input type="range" value="0" min="0" max="255" name="bg">
+                </div>
+                <div class="flex flex-col">
+                    <label for="lightness">Lightness</label>
+                    <input type="range" min="0" max="100" name="lightness">
+                </div>
+                <div class="flex flex-col">
+                    <label for="bb">Background Blue(rgb)</label>
+                    <input type="range" min="0" value="0" max="255" name="bb">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="canvas.js"></script>
+</body>
+</html>
